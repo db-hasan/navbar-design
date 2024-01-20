@@ -20,6 +20,9 @@ nav{
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
   z-index: 99;
 }
+.child-sub-menu{
+  padding: 0px 8px !important;
+}
 nav .navbar{
   height: 100%;
   max-width: 1250px;
@@ -104,7 +107,7 @@ nav .navbar .links li:hover .js-sub-menu{
   line-height: 40px;
 }
 .navbar .links li .htmlCss-more-sub-menu{
-  /* line-height: 40px; */
+  line-height: 40px;
 }
 .navbar .links li .sub-menu .more-sub-menu{
   position: absolute;
@@ -198,7 +201,7 @@ nav .navbar .links li:hover .js-sub-menu{
     font-size: 15px;
   }
 }
-@media (max-width:1200px){
+@media (max-width:992px){
   nav{
     /* position: relative; */
   }
@@ -297,10 +300,31 @@ nav .navbar .links li .sub-menu li{
       transform: rotate(90deg);
 }
 .links{
-  padding-right: 0px !important;
+  padding-left: 0px !important;
+}
+.sub-menu{
+  padding: 0px 8px !important;
 }
 .sub-menu li{
   padding: 0px 8px !important;
+}
+
+.custom-scrollbar {
+  height: 100vh;
+  overflow: auto;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+.custom-scrollbar-table::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 5px;
+}
+.nav_siderbar{
+  padding-bottom: 100px !important;
 }
 }
 @media (max-width:370px){
